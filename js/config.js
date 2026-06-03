@@ -58,8 +58,7 @@ window.SITE_CONFIG = {
   // Base URL of the backend API. Empty string '' = same origin (recommended
   // when backend serves the frontend). Use full URL when frontend and
   // backend are on different hosts/ports (e.g. 'http://localhost:5000').
-  apiBaseUrl: '',
-
+apiBaseUrl: 'https://backend-elpopo-production.up.railway.app',
   // Stripe PUBLISHABLE key — safe to expose. Must be the pk_live_... in
   // production or pk_test_... in test mode. Must match backend STRIPE_SECRET_KEY mode.
   stripePublishableKey: 'pk_test_51TM9y4JwRsHwjCUdPfn5AeMeqUtWEhw5CzoCTF86rB2RX37EIhur2at7JmxmBtHltaTvYZies5HXJChprsD6GaQJ00ETQgnk9m',
