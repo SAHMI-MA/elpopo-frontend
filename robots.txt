@@ -1,0 +1,9 @@
+# CLIENT: replace the Sitemap URL below with your real domain before going live.
+
+User-agent: *
+Allow: /
+Disallow: /success.html
+Disallow: /cancel.html
+Disallow: /api/
+
+Sitemap: https://www.elpopoacademy.com/sitemap.xml
