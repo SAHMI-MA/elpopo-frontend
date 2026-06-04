@@ -27,7 +27,7 @@
     capacityPercent: 78,
     stripePublicKey: 'pk_test_51TM9y4JwRsHwjCUdPfn5AeMeqUtWEhw5CzoCTF86rB2RX37EIhur2at7JmxmBtHltaTvYZies5HXJChprsD6GaQJ00ETQgnk9m',
     paypalUrl: 'https://paypal.me/elpopooacademy',
-    formspreeEndpoint: 'https://formspree.io/f/xeojknpb',
+    formspreeEndpoint: 'https://formspree.io/f/xqeokvlg',
     apiBase: '',
   };
 
