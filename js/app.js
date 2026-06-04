@@ -23,7 +23,7 @@
   const CONFIG = {
     whatsappNumber: '15551234567',
     whatsappMessage: "Hi, I'd like to learn more about the program.",
-    calendlyUrl: 'https://calendly.com/aji/30min',
+    calendlyUrl: 'https://calendly.com/sahmiofficiel/30min',
     capacityPercent: 78,
     stripePublicKey: 'pk_test_51TM9y4JwRsHwjCUdPfn5AeMeqUtWEhw5CzoCTF86rB2RX37EIhur2at7JmxmBtHltaTvYZies5HXJChprsD6GaQJ00ETQgnk9m',
     paypalUrl: 'https://paypal.me/elpopooacademy',
