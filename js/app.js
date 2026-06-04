@@ -25,7 +25,7 @@
     whatsappMessage: "Hi, I'd like to learn more about the program.",
     calendlyUrl: 'https://calendly.com/sahmiofficiel/30min',
     capacityPercent: 78,
-    stripePublicKey: 'pk_test_51TM9y4JwRsHwjCUdPfn5AeMeqUtWEhw5CzoCTF86rB2RX37EIhur2at7JmxmBtHltaTvYZies5HXJChprsD6GaQJ00ETQgnk9m',
+    stripePublicKey: 'pk_test_51TeZHEPnGvwtpqGZ9EkLIezm3OsnEaErrAiWzMEV6sCEfHEZ7xrX1rZ0cQf2SEC3TmhRbJ8OmgfUJdzoMnTcuxFA00kmNoDhlT',
     paypalUrl: 'https://paypal.me/elpopooacademy',
     formspreeEndpoint: 'https://formspree.io/f/xqeokvlg',
     apiBase: '',
