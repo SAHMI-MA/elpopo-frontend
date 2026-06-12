@@ -23,11 +23,11 @@
   const CONFIG = {
     whatsappNumber: '15551234567',
     whatsappMessage: "Hi, I'd like to learn more about the program.",
-    calendlyUrl: 'https://calendly.com/sahmiofficiel/30min',
+    calendlyUrl: 'https://calendly.com/aji/30min',
     capacityPercent: 78,
-    stripePublicKey: 'pk_test_51TeZHEPnGvwtpqGZ9EkLIezm3OsnEaErrAiWzMEV6sCEfHEZ7xrX1rZ0cQf2SEC3TmhRbJ8OmgfUJdzoMnTcuxFA00kmNoDhlT',
+    stripePublicKey: 'pk_test_51TM9y4JwRsHwjCUdPfn5AeMeqUtWEhw5CzoCTF86rB2RX37EIhur2at7JmxmBtHltaTvYZies5HXJChprsD6GaQJ00ETQgnk9m',
     paypalUrl: 'https://paypal.me/elpopooacademy',
-    formspreeEndpoint: 'https://formspree.io/f/xqeokvlg',
+    formspreeEndpoint: 'https://formspree.io/f/xeojknpb',
     apiBase: '',
   };
 
@@ -244,50 +244,50 @@
   /* =============================================================
      7-LAYER SOLUTION TABS — interactive layer detail
      ============================================================= */
-  const LAYERS = [
-    {
-      n: '01',
-      name: 'Identity Anchor',
-      desc: 'Establish the buyer\'s self-image before you present. People don\'t buy timeshare — they buy the version of themselves who owns it.',
-      example: '"Before we get into anything — when you guys travel, what kind of experience are you trying to create?"',
-    },
-    {
-      n: '02',
-      name: 'Pain Excavation',
-      desc: 'Surface the real cost of NOT owning. Elite closers spend 10 minutes here because this is where urgency is built.',
-      example: '"Walk me through the last trip where something didn\'t go the way you planned it."',
-    },
-    {
-      n: '03',
-      name: 'Frame Control',
-      desc: 'Whoever controls the frame controls the conversation. Hold your frame under pressure without being aggressive.',
-      example: '"I hear you — and that\'s exactly why I want to show you this before you leave today."',
-    },
-    {
-      n: '04',
-      name: 'Trial Close Architecture',
-      desc: 'Elite reps close throughout — at every transition. You\'re confirming what\'s already been agreed, not selling at the end.',
-      example: '"If this made financial sense — is there any reason you wouldn\'t want to start this year?"',
-    },
-    {
-      n: '05',
-      name: 'Objection Layering',
-      desc: 'The real objection is never the first objection. Peel back each layer until you find the real blocker.',
-      example: '"What specifically do you need to think about? Is it the timing, the financial side, or something else?"',
-    },
-    {
-      n: '06',
-      name: 'Value Reframe',
-      desc: 'Flip the math comparison. When buyers compare your price to the right thing — resistance drops.',
-      example: '"$4,000/year × 10 years = $40,000 with no guaranteed quality. Let me show you how that looks differently."',
-    },
-    {
-      n: '07',
-      name: 'Commitment Close',
-      desc: 'The close isn\'t a question — it\'s a conclusion. If you\'ve done the first 6 layers, the close is a formality.',
-      example: '"Based on everything you\'ve told me — this is exactly what you said you\'ve been looking for. Let\'s get started."',
-    },
-  ];
+const LAYERS = [
+  {
+    n: '01',
+    name: 'Disarm',
+    desc: 'Break down resistance and create openness to a new perspective.',
+    example: '"Let me ask you something first..."',
+  },
+  {
+    n: '02',
+    name: 'Identity',
+    desc: 'Connect the message to how the prospect sees themselves.',
+    example: '"What matters most to you?"',
+  },
+  {
+    n: '03',
+    name: 'Reframe',
+    desc: 'Shift the way the problem and solution are perceived.',
+    example: '"What if there was another way?"',
+  },
+  {
+    n: '04',
+    name: 'Financial Reality',
+    desc: 'Reveal the true financial impact of inaction.',
+    example: '"What is this costing you today?"',
+  },
+  {
+    n: '05',
+    name: 'New Mechanism',
+    desc: 'Introduce a new approach that challenges old assumptions.',
+    example: '"Here is a different approach."',
+  },
+  {
+    n: '06',
+    name: 'Buyer Realization',
+    desc: 'Guide prospects toward their own conclusion and decision.',
+    example: '"Does that make sense to you?"',
+  },
+  {
+    n: '07',
+    name: 'Future Consequence',
+    desc: 'Highlight the future outcome of action versus inaction.',
+    example: '"Where will you be in a year?"',
+  },
+];
 
   const layerDetail = $('#layerDetail');
   const layerTabs = $$('.layer-tab');
