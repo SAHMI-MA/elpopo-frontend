@@ -21,14 +21,14 @@
   // Defaults below are overridden by window.SITE_CONFIG from js/config.js,
   // which is the single client-editable file. Never put secret keys here.
   const CONFIG = {
-    whatsappNumber: '15551234567',
-    whatsappMessage: "Hi, I'd like to learn more about the program.",
-    calendlyUrl: 'https://calendly.com/aji/30min',
+//   whatsappNumber: '15551234567',
+//    whatsappMessage: "Hi, I'd like to learn more about the program.",
+//    calendlyUrl: 'https://calendly.com/aji/30min',
     capacityPercent: 78,
-    stripePublicKey: 'pk_test_51TM9y4JwRsHwjCUdPfn5AeMeqUtWEhw5CzoCTF86rB2RX37EIhur2at7JmxmBtHltaTvYZies5HXJChprsD6GaQJ00ETQgnk9m',
+    stripePublicKey: 'pk_live_51TM9xtFRyZR4XddRYfKPmePzZLbhbl1r48PhZZECs1PujhlZskdsFlvHpVyruxaYWwM5s2ZMgOIE6ICtu5fFsjXM00DzI9FWup',
     paypalUrl: 'https://paypal.me/elpopooacademy',
-    formspreeEndpoint: 'https://formspree.io/f/xeojknpb',
-    apiBase: '',
+    formspreeEndpoint: 'https://formspree.io/f/xqeokvlg',
+    apiBase: 'https://backend-elpopo-production.up.railway.app',
   };
 
   // Merge window.SITE_CONFIG into CONFIG (client-editable values from config.js).
