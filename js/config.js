@@ -12,8 +12,8 @@
 
 window.SITE_CONFIG = {
   /* --- Business identity ------------------------------------------- */
-  businessName: 'ELPOPO ACADEMY',
-  businessEmail: 'elpopo@elpopoacademy.com',
+  businessName: 'REFRAME LAYERS',
+  businessEmail: 'contact@reframelayers.com',
   phoneNumber: '',                // e.g. '+1 555 123 4567' — leave '' to hide
   whatsappNumber: '15551234567',  // digits only, no '+' or spaces
   whatsappMessage: "Hi, I'd like to learn more about the program.",
@@ -45,9 +45,9 @@ window.SITE_CONFIG = {
   // Drop the files into frontend/assets/videos/ and frontend/assets/images/
   // using these filenames, OR edit the paths to point elsewhere.
   videos: {
-    hero:        { src: 'assets/videos/hero.mp4',        poster: 'assets/images/hero-poster.jpg' },
+    hero:        { src: 'https://sahmi.ma/video1.mp4',    poster: 'assets/images/hero-poster.jpg' }, 
     productDemo: { src: 'assets/videos/product-demo.mp4', poster: 'assets/images/product-poster.jpg' },
-    about:       { src: 'assets/videos/about.mp4',       poster: 'assets/images/about-poster.jpg' },
+    about:       { src: 'assets/videos/about.mp4',        poster: 'assets/images/about-poster.jpg' },
   },
   images: {
     heroBackground: 'assets/images/hero-bg.jpg',
@@ -58,7 +58,8 @@ window.SITE_CONFIG = {
   // Base URL of the backend API. Empty string '' = same origin (recommended
   // when backend serves the frontend). Use full URL when frontend and
   // backend are on different hosts/ports (e.g. 'http://localhost:5000').
-apiBaseUrl: 'https://backend-elpopo-production.up.railway.app',
+  apiBaseUrl: '',
+
   // Stripe PUBLISHABLE key — safe to expose. Must be the pk_live_... in
   // production or pk_test_... in test mode. Must match backend STRIPE_SECRET_KEY mode.
   stripePublishableKey: 'pk_test_51TM9y4JwRsHwjCUdPfn5AeMeqUtWEhw5CzoCTF86rB2RX37EIhur2at7JmxmBtHltaTvYZies5HXJChprsD6GaQJ00ETQgnk9m',
