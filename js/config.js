@@ -13,7 +13,7 @@
 window.SITE_CONFIG = {
   /* --- Business identity ------------------------------------------- */
   businessName: 'REFRAME LAYERS',
-  businessEmail: 'contact@reframelayers.com',
+  businessEmail: 'elpopo@elpopoacademy.com',
   phoneNumber: '',                // e.g. '+1 555 123 4567' — leave '' to hide
   whatsappNumber: '15551234567',  // digits only, no '+' or spaces
   whatsappMessage: "Hi, I'd like to learn more about the program.",
@@ -58,11 +58,11 @@ window.SITE_CONFIG = {
   // Base URL of the backend API. Empty string '' = same origin (recommended
   // when backend serves the frontend). Use full URL when frontend and
   // backend are on different hosts/ports (e.g. 'http://localhost:5000').
-  apiBaseUrl: '',
+  apiBaseUrl: 'https://backend-elpopo-production.up.railway.app',
 
   // Stripe PUBLISHABLE key — safe to expose. Must be the pk_live_... in
   // production or pk_test_... in test mode. Must match backend STRIPE_SECRET_KEY mode.
-  stripePublishableKey: 'pk_test_51TM9y4JwRsHwjCUdPfn5AeMeqUtWEhw5CzoCTF86rB2RX37EIhur2at7JmxmBtHltaTvYZies5HXJChprsD6GaQJ00ETQgnk9m',
+  stripePublishableKey: 'pk_live_51TM9xtFRyZR4XddRYfKPmePzZLbhbl1r48PhZZECs1PujhlZskdsFlvHpVyruxaYWwM5s2ZMgOIE6ICtu5fFsjXM00DzI9FWup',
 
   // PayPal CLIENT ID (publishable) — safe to expose. Used only if you embed
   // the PayPal JS SDK on the frontend. The redirect/REST flow does not need it.
