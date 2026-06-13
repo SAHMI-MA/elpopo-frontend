@@ -1356,4 +1356,22 @@ const LAYERS = [
   window.ELPOPO.TIERS = TIERS;
   window.ELPOPO.showToast = showToast;
 
+
+
+document.addEventListener('click', (e) => {
+  const btn = e.target.closest('[data-buy-tier]');
+  if (!btn) return;
+
+  e.preventDefault();
+
+  const idx = Number(btn.dataset.buyTier);
+  const tier = window.ELPOPO?.TIERS?.[idx];
+
+  if (tier && window.ELPOPO?.openCheckout) {
+    window.ELPOPO.openCheckout(tier);
+  }
+});
+
+   
+
 })();
