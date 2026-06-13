@@ -27,7 +27,7 @@
     capacityPercent: 78,
     stripePublicKey: 'pk_live_51TM9xtFRyZR4XddRYfKPmePzZLbhbl1r48PhZZECs1PujhlZskdsFlvHpVyruxaYWwM5s2ZMgOIE6ICtu5fFsjXM00DzI9FWup',
     paypalUrl: 'https://paypal.me/elpopooacademy',
-    formspreeEndpoint: 'https://formspree.io/f/mykabzar',
+    formspreeEndpoint: 'https://formspree.io/f/mjgdkwav',
     apiBase: 'https://backend-elpopo-production.up.railway.app',
   };
 
