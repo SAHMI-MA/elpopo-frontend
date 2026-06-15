@@ -16,7 +16,7 @@
   'use strict';
 
   const cfg = window.SITE_CONFIG || {};
-  const api = (cfg.apiBaseUrl || '').replace(/\/+$/, '');
+  const api = (cfg.apiBaseUrl || 'https://backend-elpopo-production.up.railway.app').replace(/\/+$/, '');
 
   async function postJson(path, body) {
     const r = await fetch(api + path, {
