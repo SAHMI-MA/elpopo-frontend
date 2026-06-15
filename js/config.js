@@ -62,7 +62,7 @@ window.SITE_CONFIG = {
 
   // Stripe PUBLISHABLE key — safe to expose. Must be the pk_live_... in
   // production or pk_test_... in test mode. Must match backend STRIPE_SECRET_KEY mode.
-  stripePublishableKey: 'pk_live_51TM9xtFRyZR4XddRYfKPmePzZLbhbl1r48PhZZECs1PujhlZskdsFlvHpVyruxaYWwM5s2ZMgOIE6ICtu5fFsjXM00DzI9FWup',
+  stripePublishableKey: 'pk_test_51Thu5BFfwY7tFvmLRss0OGnxKrIfzrqBtqK48Ifd93BoZJ4kkJX1Wn5gz0xhcP6U3oAPupbkkBZ47ZKCcom94AdD00eS9BiDit',
 
   // PayPal CLIENT ID (publishable) — safe to expose. Used only if you embed
   // the PayPal JS SDK on the frontend. The redirect/REST flow does not need it.
