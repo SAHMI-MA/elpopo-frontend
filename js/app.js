@@ -1315,7 +1315,7 @@ const LAYERS = [
       const data = await r.json().catch(() => ({}));
       if (r.ok && data.approveUrl) {
         showToast('↗ Redirecting to PayPal…');
-        window.location.href = data.approveUrl;
+        window.open(data.approveUrl, '_blank', 'noopener,noreferrer');
         return;
       }
       // Fall through to fallback link if backend not configured.
