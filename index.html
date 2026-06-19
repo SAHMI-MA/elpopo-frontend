@@ -4573,14 +4573,20 @@ Choose the option that best matches your situation, send your message, and we’
 (async function () {
   try {
 
-    const params = new URLSearchParams(window.location.search);
-    const productKey = params.get("product");
+    console.log("SUCCESS SCRIPT STARTED");
 
-    console.log("productKey =", productKey);
+    const productElement = document.getElementById("stripeSuccessProduct");
 
-    if (!productKey) return;
+    if (!productElement) {
+      console.error("stripeSuccessProduct NOT FOUND");
+      return;
+    }
 
-    const res = await fetch(`https://reframelayers.com/api/download-link/${productKey}`);
+    const productName = productElement.innerText.trim();
+
+    console.log("PRODUCT NAME =", productName);
+
+    const res = await fetch(`https://reframelayers.com/api/download-link/${encodeURIComponent(productName)}`);
     const data = await res.json();
 
     console.log("API RESPONSE =", data);
@@ -4590,7 +4596,7 @@ Choose the option that best matches your situation, send your message, and we’
     const btn = document.getElementById("downloadBtn");
 
     if (!btn) {
-      console.error("BUTTON NOT FOUND");
+      console.error("downloadBtn NOT FOUND");
       return;
     }
 
@@ -4604,6 +4610,5 @@ Choose the option that best matches your situation, send your message, and we’
   }
 })();
 </script>
-
 </body>
 </html>
