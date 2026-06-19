@@ -4484,7 +4484,14 @@ Choose the option that best matches your situation, send your message, and we’
 	  </div>
       <h3>Order Received.</h3>
       <p>Thanks <strong id="stripeSuccessName">there</strong> — we got your order for <strong id="stripeSuccessProduct">REFRAME LAYERS Playbook</strong>. A secure payment link &amp; access details are on their way to <strong id="stripeSuccessEmail">your email</strong>. Check spam if you don't see it within a few minutes.</p>
-      <button
+     <a
+  id="downloadBtn"
+  href="#"
+  style="display:none; margin-top:15px; padding:12px 20px; background:#000; color:#fff; text-decoration:none; border-radius:6px;"
+>
+  Download Your Product
+</a>
+		<button
         type="button"
         class="
           btn btn-gold btn-md
@@ -4559,6 +4566,30 @@ Choose the option that best matches your situation, send your message, and we’
     }
   ]
 }
+
+
+<script>
+(async function () {
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const productKey = params.get("product");
+
+    if (!productKey) return;
+
+    const res = await fetch(`/api/download-link/${productKey}`);
+    const data = await res.json();
+
+    if (!data.link) return;
+
+    const btn = document.getElementById("downloadBtn");
+    btn.href = data.link;
+    btn.style.display = "inline-block";
+
+  } catch (err) {
+    console.error(err);
+  }
+})();
+</script>
 </script>
 </body>
 </html>
