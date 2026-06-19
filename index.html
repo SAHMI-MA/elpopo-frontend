@@ -4572,41 +4572,24 @@ Choose the option that best matches your situation, send your message, and we’
 <script>
 (async function () {
   try {
+    const params = new URLSearchParams(window.location.search);
+    const productKey = params.get("product");
 
-    console.log("SUCCESS SCRIPT STARTED");
+    if (!productKey) return;
 
-    const productElement = document.getElementById("stripeSuccessProduct");
-
-    if (!productElement) {
-      console.error("stripeSuccessProduct NOT FOUND");
-      return;
-    }
-
-    const productName = productElement.innerText.trim();
-
-    console.log("PRODUCT NAME =", productName);
-
-    const res = await fetch(`https://reframelayers.com/api/download-link/${encodeURIComponent(productName)}`);
+    const res = await fetch(`${CONFIG.apiBase}/api/download-link/${productKey}`);
     const data = await res.json();
-
-    console.log("API RESPONSE =", data);
 
     if (!data.link) return;
 
     const btn = document.getElementById("downloadBtn");
-
-    if (!btn) {
-      console.error("downloadBtn NOT FOUND");
-      return;
-    }
+    if (!btn) return;
 
     btn.href = data.link;
     btn.style.display = "inline-block";
 
-    console.log("BUTTON SHOWN");
-
   } catch (err) {
-    console.error("ERROR:", err);
+    console.error('[DOWNLOAD LINK ERROR]', err);
   }
 })();
 </script>
