@@ -25,7 +25,7 @@
 //    whatsappMessage: "Hi, I'd like to learn more about the program.",
 //    calendlyUrl: 'https://calendly.com/aji/30min',
     capacityPercent: 78,
-    stripePublicKey: 'pk_test_51TMLZn3gt8Hj0adMeCe3AO6vSL1ZUjc4IPFLCzeVnLIq3Tqon7GPQbHsLqsuKGNyCEsEb7PgjP4kzZjIHWpNb4gr00W2UI1acf',
+    stripePublicKey: 'pk_live_51TMLZRQQKNMt9hrrYRO1ksUIeVv55sXOGtLUCfB5aK1RgwXhW17RNEa7KDAhHrD91gbhCCA6Jos6MmFk7Y8GpmYx00HiluIvX0',
     paypalUrl: 'https://paypal.me/elpopooacademy',
     formspreeEndpoint: 'https://formspree.io/f/mjgdkwav',
     apiBase: 'https://backend-elpopo-production.up.railway.app',
