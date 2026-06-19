@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#05070a" />
+<title>Terms of Use — reframelayers.com</title>
+<meta name="robots" content="noindex, follow" />
+<link rel="icon" type="image/png" sizes="512x512" href="assets/images/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+<style>
+  /* ── Legal page layout ── */
+  .legal-hero {
+    padding: 7rem 0 3rem;
+    text-align: center;
+    position: relative;
+  }
+  .legal-hero .grid-bg {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+  }
+  .legal-hero .glow {
+    position: absolute; border-radius: 50%; filter: blur(80px); pointer-events: none;
+  }
+  .legal-hero .glow-emerald {
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(16,185,129,.12) 0%, transparent 70%);
+    top: -100px; left: 10%;
+  }
+  .legal-hero .glow-gold {
+    width: 350px; height: 350px;
+    background: radial-gradient(circle, rgba(212,175,55,.10) 0%, transparent 70%);
+    top: -60px; right: 10%;
+  }
+  .legal-hero-inner { position: relative; z-index: 1; }
+  .legal-tag {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-size: .7rem;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--clr-gold, #d4af37);
+    border: 1px solid rgba(212,175,55,.3);
+    border-radius: 2rem;
+    padding: .3rem 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .legal-title {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    font-weight: 600;
+    color: #f5f0e8;
+    line-height: 1.1;
+    margin-bottom: .75rem;
+  }
+  .legal-date {
+    font-family: 'Inter', sans-serif;
+    font-size: .8rem;
+    color: rgba(255,255,255,.4);
+    letter-spacing: .05em;
+  }
+  /* ── Legal body ── */
+  .legal-body {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0 1.5rem 6rem;
+  }
+  .legal-section {
+    margin-bottom: 2.75rem;
+    padding-bottom: 2.75rem;
+    border-bottom: 1px solid rgba(255,255,255,.06);
+  }
+  .legal-section:last-child { border-bottom: none; }
+  .legal-section h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #f5f0e8;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+  }
+  .legal-section h2 .num {
+    font-family: 'Inter', sans-serif;
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    color: var(--clr-gold, #d4af37);
+    background: rgba(212,175,55,.1);
+    border: 1px solid rgba(212,175,55,.25);
+    border-radius: .3rem;
+    padding: .15rem .45rem;
+    flex-shrink: 0;
+  }
+  .legal-section p {
+    font-family: 'Inter', sans-serif;
+    font-size: .925rem;
+    line-height: 1.8;
+    color: rgba(255,255,255,.65);
+    margin-bottom: .85rem;
+  }
+  .legal-section p:last-child { margin-bottom: 0; }
+  .legal-section ul {
+    list-style: none;
+    padding: 0;
+    margin: .5rem 0 .85rem;
+  }
+  .legal-section ul li {
+    font-family: 'Inter', sans-serif;
+    font-size: .925rem;
+    line-height: 1.75;
+    color: rgba(255,255,255,.65);
+    padding-left: 1.4rem;
+    position: relative;
+    margin-bottom: .35rem;
+  }
+  .legal-section ul li::before {
+    content: '';
+    position: absolute; left: 0; top: .7em;
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    background: var(--clr-gold, #d4af37);
+    opacity: .7;
+  }
+  /* ── Back link ── */
+  .legal-back {
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    font-family: 'Inter', sans-serif;
+    font-size: .8rem;
+    font-weight: 500;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.4);
+    text-decoration: none;
+    margin-bottom: 3rem;
+    transition: color .2s;
+  }
+  .legal-back:hover { color: var(--clr-gold, #d4af37); }
+  .legal-back svg { width: 14px; height: 14px; }
+  /* ── Divider ornament ── */
+  .legal-divider {
+    text-align: center;
+    margin: 1.5rem 0 3rem;
+    color: rgba(212,175,55,.4);
+    font-size: .75rem;
+    letter-spacing: .3em;
+  }
+  /* page bg */
+  body { background: #05070a; }
+</style>
+</head>
+<body>
+
+<!-- ============ SCROLL PROGRESS BAR ============ -->
+<div class="scroll-progress" aria-hidden="true"><div class="scroll-progress-bar" id="scrollBar"></div></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark" aria-hidden><img src="assets/images/logo.png" alt="" width="40" height="40" decoding="async" onerror="this.style.display='none';this.parentElement.textContent='🦁'"></span>
+      <span class="brand-name">reframelayers.com</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html#program">Framework</a>
+      <a href="index.html#offer">Offers</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+    <a href="index.html#apply" class="btn btn-gold btn-sm nav-cta">Apply Now</a>
+    <button type="button" class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="navMobile">
+    <a href="index.html#program">Framework</a>
+    <a href="index.html#offer">Offers</a>
+    <a href="index.html#faq">FAQ</a>
+    <a href="index.html#apply" class="btn btn-gold btn-md" style="margin-top:.75rem;">Apply Now</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <div class="legal-hero">
+    <div class="grid-bg" aria-hidden="true"></div>
+    <div class="glow glow-emerald" aria-hidden="true"></div>
+    <div class="glow glow-gold" aria-hidden="true"></div>
+    <div class="legal-hero-inner container">
+      <div class="legal-tag">Legal</div>
+      <h1 class="legal-title">Terms of Use</h1>
+      <p class="legal-date">Last Updated: June 17, 2026</p>
+    </div>
+  </div>
+
+  <!-- ============ CONTENT ============ -->
+  <div class="legal-body">
+    <a href="index.html" class="legal-back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      Back to Home
+    </a>
+
+    <p style="font-family:'Inter',sans-serif;font-size:.95rem;line-height:1.8;color:rgba(255,255,255,.65);margin-bottom:2.5rem;">
+      Welcome to Reframe Layers and ELPOPO Academy. These Terms of Use govern your access to and use of this website, digital products, training materials, private calls, and related services provided through reframelayers.com. By accessing this website or purchasing any product or service, you agree to these Terms.
+    </p>
+
+    <div class="legal-divider">· · ·</div>
+
+    <div class="legal-section">
+      <h2><span class="num">01</span> Company Information</h2>
+      <p>This website is operated by Elpopo Inc., the owner/operator of Reframe Layers and ELPOPO Academy. For questions, support, or legal inquiries, please contact us through the contact form available on this website.</p>
+    </div>
+
+    <div class="legal-section">
+      <h2><span class="num">02</span> Products and Services</h2>
+      <p>This website may offer digital sales-training products, educational resources, and private training services, including but not limited to:</p>
+      <ul>
+        <li>The Frame Game</li>
+        <li>7-Layer Blueprint</li>
+        <li>Objection Reframe Playbook</li>
+        <li>Elite Closer Identity Workbook</li>
+        <li>The Closer's Code</li>
+        <li>Private 1-Hour Closing Diagnosis With Tarik</li>
+      </ul>
+      <p>All products and services are designed for educational, strategic, and professional development purposes.</p>
+    </div>
+
+    <div class="legal-section">
+      <h2><span class="num">03</span> Payments</h2>
+      <p>Payments are processed securely through Stripe. We currently accept card payments only. PayPal is not available at this time. By purchasing, you agree to provide accurate payment information and authorize the full charge for the selected product or service.</p>
+    </div>
+
+    <div class="legal-section">
+      <h2><span class="num">04</span> Digital Product Access</h2>
+      <p>After purchasing a digital product, access may be delivered through email, download link, member access, or another digital delivery method. You are responsible for entering the correct email address during purchase.</p>
+      <p>We are not responsible for delays caused by incorrect contact details, email filtering, spam folders, or third-party platform issues.</p>
+    </div>
+
+    <div class="legal-section">
+      <h2><span class="num">05</span> Private Training Sessions</h2>
+      <p>Private training sessions are subject to availability and scheduling confirmation. You are responsible for attending the session at the confirmed time. If you need to reschedule, you must notify us at least 24 hours before the scheduled session.</p>
+      <p>Missed sessions, late arrivals, or cancellations with less than 24 hours' notice may not be eligible for rescheduling or refund.</p>
+    </div>
+
+    <div class="legal-section">
+      <h2><span class="num">06</span> Educational Use Only</h2>
+      <p>All content provided by Reframe Layers and ELPOPO Academy is for educational and informational purposes only. We do not guarantee any specific financial result, sales result, closing rate, income level, promotion, business growth, or professional outcome.</p>
+      <p>Your results depend on your skill level, execution, market, consistency, offer, environment, and personal responsibility.</p>
+    </div>
+
+    <div class="legal-section">
+      <h2><span class="num">07</span> Intellectual Property</h2>
+      <p>All content on this website and inside the products — including videos, frameworks, PDFs, scripts, training systems, written materials, visuals, branding, and sales concepts — is owned by or licensed to Reframe Layers / ELPOPO Academy.</p>
+      <p>You may not copy, resell, reproduce, distribute, share, upload, teach, or commercialize the materials without written permission. Your purchase gives you personal access only. It does not give you ownership of the intellectual property.</p>
+    </div>
+
+    <div class="legal-section">
+      <h2><span class="num">08</span> Prohibited Use</h2>
+      <p>You agree not to:</p>
+      <ul>
+        <li>Share paid materials publicly</li>
+        <li>Resell or redistribute our products</li>
+        <li>Copy our frameworks into your own paid product</li>
+        <li>Use the website for unlawful activity</li>
+        <li>Attempt to hack, disrupt, or damage the website</li>
+        <li>Misrepresent our content, brand, or services</li>
+        <li>Use our materials in a way that violates another person's rights</li>
+      </ul>
+      <p>Violation of these Terms may result in termination of access without refund.</p>
+    </div>
+
+    <div class="legal-section">
+      <h2><span class="num">09</span> Account or Access Termination</h2>
+      <p>We reserve the right to suspend or terminate access to any product, service, or account if we believe the user has violated these Terms, abused access, shared protected materials, or acted in bad faith.</p>
+    </div>
+
+    <div class="legal-section">
+      <h2><span class="num">10</span> Third-Party Tools</h2>
+      <p>This website may use third-party tools for payments, scheduling, email delivery, forms, analytics, hosting, or content delivery. We are not responsible for the policies, downtime, errors, or actions of third-party platforms.</p>
+    </div>
+
+    <div class="legal-section">
+      <h2><span class="num">11</span> Limitation of Liability</h2>
+      <p>To the maximum extent permitted by law, Reframe Layers, ELPOPO Academy, Tarik El Mazani, and related parties are not liable for indirect, incidental, financial, professional, or consequential damages resulting from your use of the website, products, or services.</p>
+      <p>You agree that your use of our materials is at your own discretion and responsibility.</p>
+    </div>
+
+    <div class="legal-section">
+      <h2><span class="num">12</span> Changes to These Terms</h2>
+      <p>We may update these Terms at any time. The updated version will be posted on this page with a new "Last Updated" date. By continuing to use the website after changes are posted, you accept the updated Terms.</p>
+    </div>
+
+    <div class="legal-section">
+      <h2><span class="num">13</span> Contact</h2>
+      <p>For questions about these Terms, please contact us through the contact form on this website.</p>
+    </div>
+  </div>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-brand">
+      <span class="brand-mark footer-brand-mark" aria-hidden><img src="assets/images/logo-seal.jpg" alt="" width="1320" height="2136" loading="lazy" decoding="async" onerror="this.style.display='none';this.parentElement.textContent='🦁'"></span>
+      <div class="brand-name">reframelayers.com</div>
+      <div class="motto">Excellentia · Audacia · Legatum</div>
+      <div class="motto-en">Excellence · Audacity · Legacy</div>
+    </div>
+    <p class="footer-desc">Elite coaching · Live seminars · VIP days · Digital products<br>For In-House Timeshare Sales Professionals</p>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-h">Programs</div>
+        <ul><li><a href="index.html#offer">The Frame Game</a></li><li><a href="index.html#offer">7-Layer Blueprint</a></li><li><a href="index.html#offer">Objection Reframe Playbook</a></li><li><a href="index.html#offer">Elite Closer Identity Workbook</a></li><li><a href="index.html#offer">The Closer's Code</a></li></ul>
+      </div>
+      <div>
+        <div class="footer-h">Shop</div>
+        <ul><li><a href="index.html#shop">Digital Products</a></li></ul>
+      </div>
+      <div>
+        <div class="footer-h">Connect</div>
+        <ul><li><a href="mailto:contact@reframelayers.com">Email</a></li><li><a href="index.html#faq">FAQ</a></li></ul>
+      </div>
+      <div>
+        <div class="footer-h">Legal</div>
+        <ul>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="refund.html">Refund Policy</a></li>
+          <li><a href="disclaimer.html">Results Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year">2026</span> reframelayers.com. Card payments processed by Stripe. Outcomes depend on the work you put in.</p>
+      <p class="uppercase small">Built for the reps who refuse to stay average.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Scroll progress
+  const bar = document.getElementById('scrollBar');
+  if (bar) {
+    window.addEventListener('scroll', () => {
+      const pct = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100;
+      bar.style.width = Math.min(pct, 100) + '%';
+    }, { passive: true });
+  }
+  // Nav scroll
+  const nav = document.getElementById('nav');
+  if (nav) {
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+  }
+  // Mobile toggle
+  const toggle = document.getElementById('navToggle');
+  const mobile = document.getElementById('navMobile');
+  if (toggle && mobile) {
+    toggle.addEventListener('click', () => {
+      const open = mobile.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  }
+  // Year
+  const yr = document.getElementById('year');
+  if (yr) yr.textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
