@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="theme-color" content="#05070a" />
-<title>The 7-Layer Blueprint: Why Most Closers Stop at Layer 2 — reframelayers.com</title>
+<title>Blog — reframelayers.com</title>
 <meta name="robots" content="index, follow" />
 <link rel="icon" type="image/png" sizes="512x512" href="assets/images/logo.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,7 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/styles.css" />
 <style>
-  /* ── Hero ── */
+  /* ── Blog hero (reuses legal-hero pattern) ── */
   .legal-hero {
     padding: 7rem 0 3rem;
     text-align: center;
@@ -26,7 +26,9 @@
     background-size: 60px 60px;
     pointer-events: none;
   }
-  .legal-hero .glow { position: absolute; border-radius: 50%; filter: blur(80px); pointer-events: none; }
+  .legal-hero .glow {
+    position: absolute; border-radius: 50%; filter: blur(80px); pointer-events: none;
+  }
   .legal-hero .glow-emerald {
     width: 400px; height: 400px;
     background: radial-gradient(circle, rgba(16,185,129,.12) 0%, transparent 70%);
@@ -41,7 +43,10 @@
   .legal-tag {
     display: inline-block;
     font-family: 'Inter', sans-serif;
-    font-size: .7rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+    font-size: .7rem;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
     color: var(--clr-gold, #d4af37);
     border: 1px solid rgba(212,175,55,.3);
     border-radius: 2rem;
@@ -50,233 +55,186 @@
   }
   .legal-title {
     font-family: 'Cormorant Garamond', Georgia, serif;
-    font-size: clamp(2rem, 4.6vw, 3.2rem);
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
     font-weight: 600;
     color: #f5f0e8;
-    line-height: 1.15;
-    margin-bottom: 1.1rem;
-    max-width: 780px;
-    margin-left: auto; margin-right: auto;
+    line-height: 1.1;
+    margin-bottom: .75rem;
   }
-  .post-meta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: .5rem;
+  .legal-subtitle {
     font-family: 'Inter', sans-serif;
-    font-size: .8rem;
-    color: rgba(255,255,255,.4);
-    letter-spacing: .03em;
-  }
-  .post-meta span + span::before { content: '·'; margin: 0 .5rem; }
-  .post-meta .author { color: rgba(255,255,255,.6); font-weight: 500; }
-
-  /* ── Cover image ── */
-  .post-cover {
-    max-width: 900px;
-    margin: 2.5rem auto 0;
-    padding: 0 1.5rem;
-  }
-  .post-cover .frame {
-    aspect-ratio: 16/8;
-    border-radius: .9rem;
-    overflow: hidden;
-    background:
-      radial-gradient(circle at 25% 25%, rgba(16,185,129,.18), transparent 55%),
-      radial-gradient(circle at 80% 75%, rgba(212,175,55,.16), transparent 55%),
-      #0b0e13;
-    border: 1px solid rgba(255,255,255,.07);
-  }
-  .post-cover .frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
-
-  /* ── Article body ── */
-  .legal-body {
-    max-width: 720px;
+    font-size: .95rem;
+    color: rgba(255,255,255,.5);
+    max-width: 560px;
     margin: 0 auto;
-    padding: 3.5rem 1.5rem 5rem;
-  }
-  .legal-back {
-    display: inline-flex; align-items: center; gap: .4rem;
-    font-family: 'Inter', sans-serif;
-    font-size: .8rem; font-weight: 500; letter-spacing: .06em; text-transform: uppercase;
-    color: rgba(255,255,255,.4);
-    text-decoration: none;
-    margin-bottom: 2.5rem;
-    transition: color .2s;
-  }
-  .legal-back:hover { color: var(--clr-gold, #d4af37); }
-  .legal-back svg { width: 14px; height: 14px; }
-
-  .post-content p {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.02rem;
-    line-height: 1.9;
-    color: rgba(255,255,255,.68);
-    margin-bottom: 1.35rem;
-  }
-  .post-content h2 {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-size: 1.7rem;
-    font-weight: 600;
-    color: #f5f0e8;
-    margin: 2.6rem 0 1rem;
-  }
-  .post-content h3 {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: #f5f0e8;
-    margin: 2rem 0 .8rem;
-  }
-  .post-content ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 1.4rem;
-  }
-  .post-content ul li {
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    line-height: 1.8;
-    color: rgba(255,255,255,.68);
-    padding-left: 1.5rem;
-    position: relative;
-    margin-bottom: .5rem;
-  }
-  .post-content ul li::before {
-    content: '';
-    position: absolute; left: 0; top: .75em;
-    width: 5px; height: 5px;
-    border-radius: 50%;
-    background: var(--clr-gold, #d4af37);
-    opacity: .7;
-  }
-  .post-content blockquote {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-style: italic;
-    font-size: 1.35rem;
-    line-height: 1.5;
-    color: #f5f0e8;
-    border-left: 3px solid var(--clr-gold, #d4af37);
-    padding: .3rem 0 .3rem 1.4rem;
-    margin: 2rem 0;
+    line-height: 1.7;
   }
 
-  /* ── Divider ── */
-  .legal-divider {
-    text-align: center;
-    margin: 2.5rem 0;
-    color: rgba(212,175,55,.4);
-    font-size: .75rem;
-    letter-spacing: .3em;
-  }
-
-  /* ── Author box ── */
-  .post-author-box {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    background: rgba(255,255,255,.02);
-    border: 1px solid rgba(255,255,255,.07);
-    border-radius: .8rem;
-    padding: 1.3rem 1.5rem;
-    margin-top: 2.5rem;
-  }
-  .post-author-box .avatar {
-    width: 52px; height: 52px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(212,175,55,.25), rgba(16,185,129,.15));
-    flex-shrink: 0;
-    border: 1px solid rgba(212,175,55,.3);
-  }
-  .post-author-box .name {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-size: 1.05rem;
-    font-weight: 600;
-    color: #f5f0e8;
-  }
-  .post-author-box .role {
-    font-family: 'Inter', sans-serif;
-    font-size: .8rem;
-    color: rgba(255,255,255,.45);
-  }
-
-  /* ── CTA band ── */
-  .post-cta {
-    max-width: 900px;
-    margin: 0 auto 5rem;
-    padding: 0 1.5rem;
-  }
-  .post-cta-inner {
-    text-align: center;
-    background: rgba(255,255,255,.02);
-    border: 1px solid rgba(212,175,55,.25);
-    border-radius: 1rem;
-    padding: 2.6rem 1.5rem;
-  }
-  .post-cta-inner h3 {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: #f5f0e8;
-    margin-bottom: .6rem;
-  }
-  .post-cta-inner p {
-    font-family: 'Inter', sans-serif;
-    font-size: .9rem;
-    color: rgba(255,255,255,.55);
-    margin-bottom: 1.4rem;
-  }
-
-  /* ── Related posts ── */
-  .related-wrap {
+  /* ── Blog grid ── */
+  .blog-wrap {
     max-width: 1180px;
     margin: 0 auto;
     padding: 0 1.5rem 6rem;
   }
-  .related-wrap h2 {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: #f5f0e8;
-    text-align: center;
-    margin-bottom: 2rem;
+
+  .blog-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .6rem;
+    justify-content: center;
+    margin-bottom: 3rem;
   }
-  .related-grid {
+  .blog-filter {
+    font-family: 'Inter', sans-serif;
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.55);
+    background: rgba(255,255,255,.03);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 2rem;
+    padding: .5rem 1.1rem;
+    cursor: pointer;
+    transition: all .2s;
+  }
+  .blog-filter:hover { color: #f5f0e8; border-color: rgba(212,175,55,.3); }
+  .blog-filter.active {
+    color: #05070a;
+    background: var(--clr-gold, #d4af37);
+    border-color: var(--clr-gold, #d4af37);
+  }
+
+  .blog-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 1.75rem;
   }
-  @media (max-width: 900px) { .related-grid { grid-template-columns: 1fr; } }
-  .related-card {
-    display: block;
+  .blog-grid .card-feature {
+    grid-column: span 3;
+  }
+  @media (max-width: 980px) {
+    .blog-grid { grid-template-columns: repeat(2, 1fr); }
+    .blog-grid .card-feature { grid-column: span 2; }
+  }
+  @media (max-width: 640px) {
+    .blog-grid { grid-template-columns: 1fr; }
+    .blog-grid .card-feature { grid-column: span 1; }
+  }
+
+  .blog-card {
+    display: flex;
+    flex-direction: column;
     background: rgba(255,255,255,.02);
     border: 1px solid rgba(255,255,255,.07);
-    border-radius: .8rem;
+    border-radius: .9rem;
     overflow: hidden;
     text-decoration: none;
-    transition: transform .2s, border-color .2s;
+    transition: transform .25s ease, border-color .25s ease, background .25s ease;
   }
-  .related-card:hover { transform: translateY(-3px); border-color: rgba(212,175,55,.35); }
-  .related-card .thumb {
+  .blog-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(212,175,55,.35);
+    background: rgba(255,255,255,.035);
+  }
+  .blog-card .thumb {
+    position: relative;
     aspect-ratio: 16/10;
-    background: radial-gradient(circle at 30% 30%, rgba(16,185,129,.15), transparent 60%), #0b0e13;
+    background:
+      radial-gradient(circle at 30% 20%, rgba(16,185,129,.18), transparent 60%),
+      radial-gradient(circle at 80% 80%, rgba(212,175,55,.15), transparent 60%),
+      #0b0e13;
+    overflow: hidden;
   }
-  .related-card .body { padding: 1.1rem 1.2rem 1.3rem; }
-  .related-card .meta {
+  .blog-card.card-feature .thumb { aspect-ratio: 21/9; }
+  .blog-card .thumb img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+  }
+  .blog-card .thumb .cat-pill {
+    position: absolute;
+    top: .9rem; left: .9rem;
     font-family: 'Inter', sans-serif;
-    font-size: .68rem;
+    font-size: .65rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #05070a;
+    background: var(--clr-gold, #d4af37);
+    border-radius: .3rem;
+    padding: .3rem .6rem;
+  }
+  .blog-card .body {
+    padding: 1.4rem 1.4rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .blog-card.card-feature .body { padding: 2rem 2.2rem 2.2rem; }
+  .blog-card .meta {
+    font-family: 'Inter', sans-serif;
+    font-size: .72rem;
     letter-spacing: .05em;
     text-transform: uppercase;
     color: rgba(255,255,255,.35);
-    margin-bottom: .5rem;
+    margin-bottom: .6rem;
   }
-  .related-card h4 {
+  .blog-card .meta span + span::before { content: '·'; margin: 0 .45rem; }
+  .blog-card h3 {
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-weight: 600;
     color: #f5f0e8;
-    font-size: 1.05rem;
-    line-height: 1.3;
+    font-size: 1.25rem;
+    line-height: 1.25;
+    margin-bottom: .6rem;
+  }
+  .blog-card.card-feature h3 { font-size: 2rem; }
+  .blog-card p.excerpt {
+    font-family: 'Inter', sans-serif;
+    font-size: .87rem;
+    line-height: 1.7;
+    color: rgba(255,255,255,.55);
+    margin-bottom: 1rem;
+    flex: 1;
+  }
+  .blog-card .read-more {
+    font-family: 'Inter', sans-serif;
+    font-size: .78rem;
+    font-weight: 600;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--clr-gold, #d4af37);
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+  }
+  .blog-card .read-more svg { width: 14px; height: 14px; transition: transform .2s; }
+  .blog-card:hover .read-more svg { transform: translateX(3px); }
+
+  /* ── Pagination ── */
+  .blog-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 3.5rem;
+  }
+  .blog-pagination a, .blog-pagination span {
+    font-family: 'Inter', sans-serif;
+    font-size: .8rem;
+    font-weight: 600;
+    color: rgba(255,255,255,.5);
+    width: 2.3rem; height: 2.3rem;
+    display: flex; align-items: center; justify-content: center;
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: .5rem;
+    text-decoration: none;
+    transition: all .2s;
+  }
+  .blog-pagination a:hover { border-color: rgba(212,175,55,.4); color: #f5f0e8; }
+  .blog-pagination .current {
+    color: #05070a;
+    background: var(--clr-gold, #d4af37);
+    border-color: var(--clr-gold, #d4af37);
   }
 
   body { background: #05070a; }
@@ -319,102 +277,122 @@
     <div class="glow glow-emerald" aria-hidden="true"></div>
     <div class="glow glow-gold" aria-hidden="true"></div>
     <div class="legal-hero-inner container">
-      <div class="legal-tag">Frameworks</div>
-      <h1 class="legal-title">The 7-Layer Blueprint: Why Most Closers Stop at Layer 2</h1>
-      <div class="post-meta">
-        <span class="author">Tarik El Mazani</span>
-        <span>July 10, 2026</span>
-        <span>7 min read</span>
-      </div>
+      <div class="legal-tag">Blog</div>
+      <h1 class="legal-title">Insights & Strategies</h1>
+      <p class="legal-subtitle">Frameworks, mindset shifts, and on-the-floor tactics for In-House Timeshare Sales Professionals who refuse to stay average.</p>
     </div>
   </div>
 
-  <div class="post-cover">
-    <div class="frame">
-      <!-- <img src="assets/images/blog/post-1-cover.jpg" alt="Descriptive alt text"> -->
-    </div>
-  </div>
+  <div class="blog-wrap">
 
-  <div class="legal-body">
-    <a href="blog.html" class="legal-back">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-      Back to Blog
-    </a>
-
-    <div class="post-content">
-      <p>Most reps think they've closed the objection the moment the buyer stops arguing. In reality, silence isn't agreement — it's just the surface layer settling. The room hasn't moved, it's just gone quiet.</p>
-
-      <p>The 7-Layer Blueprint exists because every real objection is stacked: a stated reason on top of an unstated fear on top of an identity concern the buyer hasn't even said out loud to themselves yet. Most closers handle layer one, hear less resistance, and call it a win. The deal dies three days later on layer four.</p>
-
-      <h2>Layer 1: The Stated Reason</h2>
-      <p>This is the sentence that comes out of their mouth — price, timing, "need to think about it." It's real, but it's rarely the whole story. Treating it as the finish line is the single most common mistake in the room.</p>
-
-      <h2>Layer 2: The Social Proof Check</h2>
-      <p>Underneath the stated reason is usually a quiet question: <em>does this make sense for someone like me?</em> This is where most training stops — a testimonial, a stat, a nod toward other buyers. It helps, but it's still surface work.</p>
-
-      <blockquote>The close isn't won by removing resistance. It's won by understanding what the resistance is protecting.</blockquote>
-
-      <h2>Layers 3 through 7</h2>
-      <p>The deeper layers — identity, fear of regret, fear of judgement, financial self-image, and long-term vision — are where the actual decision gets made. Each one needs a different kind of question, not a different kind of pitch.</p>
-
-      <ul>
-        <li>Layer 3: What does saying yes make true about who they are?</li>
-        <li>Layer 4: What's the story they're afraid of telling their spouse or partner?</li>
-        <li>Layer 5: What past decision is this one being quietly compared to?</li>
-        <li>Layer 6: What does their gut already know that their mouth hasn't said?</li>
-        <li>Layer 7: What version of their future are they actually buying?</li>
-      </ul>
-
-      <h3>Why This Matters On The Floor</h3>
-      <p>You don't need seven scripted questions for seven layers. You need to recognize which layer you're actually standing on, and stop mistaking silence at layer one for agreement at layer seven.</p>
-
-      <p>That distinction — knowing where you are in the stack — is the entire difference between a rep who closes consistently and one who gets lucky some months and blames the market the rest.</p>
+    <div class="blog-filters">
+      <button class="blog-filter active">All</button>
+      <button class="blog-filter">Mindset</button>
+      <button class="blog-filter">Objections</button>
+      <button class="blog-filter">Closing</button>
+      <button class="blog-filter">Frameworks</button>
     </div>
 
-    <div class="legal-divider">· · ·</div>
+    <div class="blog-grid">
 
-    <div class="post-author-box">
-      <div class="avatar" aria-hidden="true"></div>
-      <div>
-        <div class="name">Tarik El Mazani</div>
-        <div class="role">Founder, Reframe Layers & ELPOPO Academy</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="post-cta">
-    <div class="post-cta-inner">
-      <h3>Want the full 7-Layer Blueprint?</h3>
-      <p>Get the complete framework, scripts, and diagnostic worksheets used inside ELPOPO Academy.</p>
-      <a href="index.html#offer" class="btn btn-gold btn-md">Explore The Blueprint</a>
-    </div>
-  </div>
-
-  <div class="related-wrap">
-    <h2>Keep Reading</h2>
-    <div class="related-grid">
-      <a href="blog-post.html" class="related-card">
-        <div class="thumb"></div>
+      <!-- Featured article -->
+      <a href="blog-post.html" class="blog-card card-feature">
+        <div class="thumb">
+          <span class="cat-pill">Frameworks</span>
+          <!-- <img src="assets/images/blog/featured.jpg" alt=""> -->
+        </div>
         <div class="body">
-          <div class="meta">Objections · 5 min read</div>
-          <h4>"I Need To Think About It" Isn't An Objection — It's a Symptom</h4>
+          <div class="meta"><span>July 10, 2026</span><span>7 min read</span></div>
+          <h3>The 7-Layer Blueprint: Why Most Closers Stop at Layer 2</h3>
+          <p class="excerpt">Most reps handle the surface objection and call it a close. The real deal lives four layers deeper — here's how to get there without sounding scripted.</p>
+          <span class="read-more">Read Article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </span>
         </div>
       </a>
-      <a href="blog-post.html" class="related-card">
-        <div class="thumb"></div>
+
+      <!-- Standard cards -->
+      <a href="blog-post.html" class="blog-card">
+        <div class="thumb">
+          <span class="cat-pill">Objections</span>
+        </div>
         <div class="body">
-          <div class="meta">Mindset · 4 min read</div>
-          <h4>Identity Before Income: The Order Elite Closers Actually Follow</h4>
+          <div class="meta"><span>July 3, 2026</span><span>5 min read</span></div>
+          <h3>"I Need To Think About It" Isn't An Objection — It's a Symptom</h3>
+          <p class="excerpt">Treating this line like the real obstacle is why so many deals die quietly. Here's what's actually being said underneath it.</p>
+          <span class="read-more">Read Article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </span>
         </div>
       </a>
-      <a href="blog-post.html" class="related-card">
-        <div class="thumb"></div>
-        <div class="body">
-          <div class="meta">Closing · 6 min read</div>
-          <h4>The Silent Close: Why Talking Less Wins More Tours</h4>
+
+      <a href="blog-post.html" class="blog-card">
+        <div class="thumb">
+          <span class="cat-pill">Mindset</span>
         </div>
+        <div class="body">
+          <div class="meta"><span>June 26, 2026</span><span>4 min read</span></div>
+          <h3>Identity Before Income: The Order Elite Closers Actually Follow</h3>
+          <p class="excerpt">You don't close bigger by wanting it more. You close bigger by becoming someone the room already trusts.</p>
+          <span class="read-more">Read Article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </span>
+        </div>
+      </a>
+
+      <a href="blog-post.html" class="blog-card">
+        <div class="thumb">
+          <span class="cat-pill">Closing</span>
+        </div>
+        <div class="body">
+          <div class="meta"><span>June 19, 2026</span><span>6 min read</span></div>
+          <h3>The Silent Close: Why Talking Less Wins More Tours</h3>
+          <p class="excerpt">Every extra sentence after the ask is a door you're opening for the buyer to walk out of. Here's the discipline behind saying less.</p>
+          <span class="read-more">Read Article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </span>
+        </div>
+      </a>
+
+      <a href="blog-post.html" class="blog-card">
+        <div class="thumb">
+          <span class="cat-pill">Frameworks</span>
+        </div>
+        <div class="body">
+          <div class="meta"><span>June 12, 2026</span><span>5 min read</span></div>
+          <h3>The Frame Game: Reframing Price Without Discounting</h3>
+          <p class="excerpt">Discounting is a shortcut that costs you the room's respect. Reframing the value stack is slower, but it's the only version that scales.</p>
+          <span class="read-more">Read Article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </span>
+        </div>
+      </a>
+
+      <a href="blog-post.html" class="blog-card">
+        <div class="thumb">
+          <span class="cat-pill">Objections</span>
+        </div>
+        <div class="body">
+          <div class="meta"><span>June 5, 2026</span><span>4 min read</span></div>
+          <h3>"We Can't Afford It Right Now" — A Layer-by-Layer Breakdown</h3>
+          <p class="excerpt">A real transcript, annotated line by line, showing exactly where the reframe happens and why it lands.</p>
+          <span class="read-more">Read Article
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </span>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="blog-pagination">
+      <span class="current">1</span>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#" aria-label="Next">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
     </div>
+
   </div>
 
 </main>
@@ -482,6 +460,14 @@
   }
   const yr = document.getElementById('year');
   if (yr) yr.textContent = new Date().getFullYear();
+
+  // Simple filter toggle (visual only — wire up to real categories/CMS as needed)
+  document.querySelectorAll('.blog-filter').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.blog-filter').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
 </script>
 </body>
 </html>
