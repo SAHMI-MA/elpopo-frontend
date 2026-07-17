@@ -1,0 +1,50 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  
+    <defs>
+      <pattern id="grid-4" width="48" height="48" patternUnits="userSpaceOnUse">
+        <path d="M 48 0 L 0 0 0 48" fill="none" stroke="rgba(255,255,255,0.035)" stroke-width="1"/>
+      </pattern>
+      <radialGradient id="glowGold-4" cx="50%" cy="50%" r="60%">
+        <stop offset="0%" stop-color="#d4af37" stop-opacity="0.35"/>
+        <stop offset="100%" stop-color="#d4af37" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="glowEmerald-4" cx="50%" cy="50%" r="60%">
+        <stop offset="0%" stop-color="#10b981" stop-opacity="0.30"/>
+        <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="lineGold-4" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#d4af37" stop-opacity="0"/>
+        <stop offset="50%" stop-color="#d4af37" stop-opacity="0.9"/>
+        <stop offset="100%" stop-color="#d4af37" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <rect width="800" height="500" fill="#05070a"/>
+    <rect width="800" height="500" fill="url(#grid-4)"/>
+
+  <circle cx="400" cy="250" r="260" fill="url(#glowGold-4)"/>
+  <rect x="96.0" y="205.0" width="8" height="90.0" rx="3" fill="#10b981" opacity="0.80"/>
+<rect x="122.1" y="209.7" width="8" height="80.5" rx="3" fill="#d4af37" opacity="0.78"/>
+<rect x="148.2" y="214.0" width="8" height="72.1" rx="3" fill="#10b981" opacity="0.76"/>
+<rect x="174.3" y="217.8" width="8" height="64.5" rx="3" fill="#d4af37" opacity="0.74"/>
+<rect x="200.3" y="221.1" width="8" height="57.7" rx="3" fill="#10b981" opacity="0.72"/>
+<rect x="226.4" y="224.2" width="8" height="51.6" rx="3" fill="#d4af37" opacity="0.70"/>
+<rect x="252.5" y="226.9" width="8" height="46.2" rx="3" fill="#10b981" opacity="0.68"/>
+<rect x="278.6" y="229.3" width="8" height="41.3" rx="3" fill="#d4af37" opacity="0.66"/>
+<rect x="304.7" y="231.5" width="8" height="37.0" rx="3" fill="#10b981" opacity="0.64"/>
+<rect x="330.8" y="233.4" width="8" height="33.1" rx="3" fill="#d4af37" opacity="0.62"/>
+<rect x="356.9" y="235.2" width="8" height="29.6" rx="3" fill="#10b981" opacity="0.60"/>
+<rect x="383.0" y="236.7" width="8" height="26.5" rx="3" fill="#d4af37" opacity="0.58"/>
+<rect x="409.0" y="238.1" width="8" height="23.7" rx="3" fill="#10b981" opacity="0.56"/>
+<rect x="435.1" y="239.4" width="8" height="21.2" rx="3" fill="#d4af37" opacity="0.54"/>
+<rect x="461.2" y="240.5" width="8" height="19.0" rx="3" fill="#10b981" opacity="0.52"/>
+<rect x="487.3" y="241.5" width="8" height="17.0" rx="3" fill="#d4af37" opacity="0.50"/>
+<rect x="513.4" y="248.0" width="8" height="4.0" rx="3" fill="#10b981" opacity="0.48"/>
+<rect x="539.5" y="248.0" width="8" height="4.0" rx="3" fill="#d4af37" opacity="0.46"/>
+<rect x="565.6" y="248.0" width="8" height="4.0" rx="3" fill="#10b981" opacity="0.44"/>
+<rect x="591.7" y="248.0" width="8" height="4.0" rx="3" fill="#d4af37" opacity="0.42"/>
+<rect x="617.7" y="248.0" width="8" height="4.0" rx="3" fill="#10b981" opacity="0.40"/>
+<rect x="643.8" y="248.0" width="8" height="4.0" rx="3" fill="#d4af37" opacity="0.38"/>
+<rect x="669.9" y="248.0" width="8" height="4.0" rx="3" fill="#10b981" opacity="0.36"/>
+<rect x="696.0" y="248.0" width="8" height="4.0" rx="3" fill="#d4af37" opacity="0.34"/>
+<text x="400" y="465" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#f5f0e8" opacity="0.55" font-style="italic">The Silent Close</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  
+    <defs>
+      <pattern id="grid-2" width="48" height="48" patternUnits="userSpaceOnUse">
+        <path d="M 48 0 L 0 0 0 48" fill="none" stroke="rgba(255,255,255,0.035)" stroke-width="1"/>
+      </pattern>
+      <radialGradient id="glowGold-2" cx="50%" cy="50%" r="60%">
+        <stop offset="0%" stop-color="#d4af37" stop-opacity="0.35"/>
+        <stop offset="100%" stop-color="#d4af37" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="glowEmerald-2" cx="50%" cy="50%" r="60%">
+        <stop offset="0%" stop-color="#10b981" stop-opacity="0.30"/>
+        <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="lineGold-2" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#d4af37" stop-opacity="0"/>
+        <stop offset="50%" stop-color="#d4af37" stop-opacity="0.9"/>
+        <stop offset="100%" stop-color="#d4af37" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <rect width="800" height="500" fill="#05070a"/>
+    <rect width="800" height="500" fill="url(#grid-2)"/>
+
+  <circle cx="400" cy="250" r="260" fill="url(#glowGold-2)"/>
+  <circle cx="400" cy="250" r="60" fill="none" stroke="#d4af37" stroke-width="1.4" opacity="0.55"/>
+<circle cx="400" cy="250" r="110" fill="none" stroke="#d4af37" stroke-width="1.4" opacity="0.44"/>
+<circle cx="400" cy="250" r="160" fill="none" stroke="#d4af37" stroke-width="1.4" opacity="0.33"/>
+<circle cx="400" cy="250" r="210" fill="none" stroke="#d4af37" stroke-width="1.4" opacity="0.22"/>
+<circle cx="400" cy="250" r="9" fill="#f5f0e8"/><line x1="180" y1="120" x2="620" y2="380" stroke="url(#lineGold-2)" stroke-width="2" opacity="0.6"/><text x="400" y="465" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#f5f0e8" opacity="0.55" font-style="italic">Beneath the Surface</text>
+</svg>
