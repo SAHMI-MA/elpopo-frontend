@@ -1,0 +1,33 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  
+    <defs>
+      <pattern id="grid-1" width="48" height="48" patternUnits="userSpaceOnUse">
+        <path d="M 48 0 L 0 0 0 48" fill="none" stroke="rgba(255,255,255,0.035)" stroke-width="1"/>
+      </pattern>
+      <radialGradient id="glowGold-1" cx="50%" cy="50%" r="60%">
+        <stop offset="0%" stop-color="#d4af37" stop-opacity="0.35"/>
+        <stop offset="100%" stop-color="#d4af37" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="glowEmerald-1" cx="50%" cy="50%" r="60%">
+        <stop offset="0%" stop-color="#10b981" stop-opacity="0.30"/>
+        <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="lineGold-1" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#d4af37" stop-opacity="0"/>
+        <stop offset="50%" stop-color="#d4af37" stop-opacity="0.9"/>
+        <stop offset="100%" stop-color="#d4af37" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <rect width="800" height="500" fill="#05070a"/>
+    <rect width="800" height="500" fill="url(#grid-1)"/>
+
+  <circle cx="180" cy="120" r="220" fill="url(#glowEmerald-1)"/><circle cx="640" cy="380" r="240" fill="url(#glowGold-1)"/>
+  <path d="M 120 130 L 680 120 L 700 152 L 140 162 Z" fill="#10b981" opacity="0.10" stroke="#10b981" stroke-opacity="0.5" stroke-width="1"/>
+<path d="M 128 160 L 672 150 L 692 182 L 148 192 Z" fill="#d4af37" opacity="0.15" stroke="#d4af37" stroke-opacity="0.5" stroke-width="1"/>
+<path d="M 136 190 L 664 180 L 684 212 L 156 222 Z" fill="#10b981" opacity="0.20" stroke="#10b981" stroke-opacity="0.5" stroke-width="1"/>
+<path d="M 144 220 L 656 210 L 676 242 L 164 252 Z" fill="#d4af37" opacity="0.25" stroke="#d4af37" stroke-opacity="0.5" stroke-width="1"/>
+<path d="M 152 250 L 648 240 L 668 272 L 172 282 Z" fill="#10b981" opacity="0.30" stroke="#10b981" stroke-opacity="0.5" stroke-width="1"/>
+<path d="M 160 280 L 640 270 L 660 302 L 180 312 Z" fill="#d4af37" opacity="0.35" stroke="#d4af37" stroke-opacity="0.5" stroke-width="1"/>
+<path d="M 168 310 L 632 300 L 652 332 L 188 342 Z" fill="#d4af37" opacity="0.40" stroke="#d4af37" stroke-opacity="0.5" stroke-width="1"/>
+<text x="400" y="465" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#f5f0e8" opacity="0.55" font-style="italic">Seven Layers</text>
+</svg>

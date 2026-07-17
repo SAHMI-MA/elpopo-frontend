@@ -1,0 +1,31 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  
+    <defs>
+      <pattern id="grid-6" width="48" height="48" patternUnits="userSpaceOnUse">
+        <path d="M 48 0 L 0 0 0 48" fill="none" stroke="rgba(255,255,255,0.035)" stroke-width="1"/>
+      </pattern>
+      <radialGradient id="glowGold-6" cx="50%" cy="50%" r="60%">
+        <stop offset="0%" stop-color="#d4af37" stop-opacity="0.35"/>
+        <stop offset="100%" stop-color="#d4af37" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="glowEmerald-6" cx="50%" cy="50%" r="60%">
+        <stop offset="0%" stop-color="#10b981" stop-opacity="0.30"/>
+        <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="lineGold-6" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#d4af37" stop-opacity="0"/>
+        <stop offset="50%" stop-color="#d4af37" stop-opacity="0.9"/>
+        <stop offset="100%" stop-color="#d4af37" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <rect width="800" height="500" fill="#05070a"/>
+    <rect width="800" height="500" fill="url(#grid-6)"/>
+
+  <circle cx="400" cy="250" r="260" fill="url(#glowGold-6)"/>
+  <rect x="190.0" y="140" width="420" height="26" rx="4" fill="#d4af37" opacity="0.22" stroke="#d4af37" stroke-opacity="0.55" stroke-width="1"/>
+<rect x="234.0" y="190" width="360" height="26" rx="4" fill="#10b981" opacity="0.22" stroke="#10b981" stroke-opacity="0.55" stroke-width="1"/>
+<rect x="160.0" y="240" width="460" height="26" rx="4" fill="#d4af37" opacity="0.22" stroke="#d4af37" stroke-opacity="0.55" stroke-width="1"/>
+<rect x="272.0" y="290" width="300" height="26" rx="4" fill="#10b981" opacity="0.22" stroke="#10b981" stroke-opacity="0.55" stroke-width="1"/>
+<rect x="206.0" y="340" width="400" height="26" rx="4" fill="#d4af37" opacity="0.22" stroke="#d4af37" stroke-opacity="0.55" stroke-width="1"/>
+<text x="400" y="465" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#f5f0e8" opacity="0.55" font-style="italic">Layer by Layer</text>
+</svg>
